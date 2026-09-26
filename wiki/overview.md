@@ -5,7 +5,7 @@ tags: [meta]
 aliases: [Big picture, Home]
 created: 2026-09-26
 updated: 2026-09-26
-sources: [2026-09-26-llm-wiki-pattern, 2026-09-26-vault-focus]
+sources: [2026-09-26-llm-wiki-pattern, 2026-09-26-vault-focus, 2026-09-26-resume]
 status: active
 ---
 
@@ -15,33 +15,39 @@ status: active
 appended) as sources accumulate.*
 
 ## What this vault is for
-The second brain of a [[generalist]] moving **from medicine into
-[[ai-product-development|AI product development]]**. It has two goals: **be more
+The second brain of Dr. Shubham Kashyap ([[me]]), a physician with 10+ years in
+clinical and healthcare leadership and a [[generalist]] moving **from medicine into
+[[ai-product-development|AI product development]]**. That move is already under way:
+12 apps shipped and 60+ AI pipelines built since 2023 ([[2026-09-26-resume]]). It has two goals: **be more
 productive** and **keep knowledge organised** across domains
 ([[2026-09-26-vault-focus]]). It runs on the [[llm-wiki|LLM Wiki]] pattern: you
 curate sources and ask questions, and the LLM compiles them into linked pages
-([[2026-09-26-llm-wiki-pattern]]). See [[me]] for the owner profile.
+([[2026-09-26-llm-wiki-pattern]]).
 
 ## Current themes
-1. **AI product development** — the target field. Stub for now; it grows as you add
+1. **[[ai-product-development|AI product development]]** — the target field. It grows as you add
    articles, courses, product teardowns and your own project notes.
-2. **Medicine → AI bridge** — where clinical experience gives an edge in AI product
-   work. This is the vault's most distinctive angle *(inference)*.
-3. **[[personal-productivity|Productivity]]** — systems and habits, and the vault
+2. **Medicine → AI bridge** — the [[physician-technologist]] profile: clinical
+   problem → spec → AI build → clinical check of output → ship. Shown in practice by
+   [[mediq|MediQ]], [[grow-baby-grow|Grow Baby Grow]] and [[saathi|Saathi]]
+   ([[2026-09-26-resume]]).
+3. **Building with AI** — [[ai-assisted-development]], [[claude-code|Claude Code]],
+   [[n8n]]: your production toolkit.
+4. **[[personal-productivity|Productivity]]** — systems and habits, and the vault
    itself as a tool.
-4. **Knowledge management with LLMs** — the pattern this vault runs on,
+5. **Knowledge management with LLMs** — the pattern this vault runs on,
    [[retrieval-augmented-generation|RAG]] as its contrast, and the
    [[maintenance-burden]] it removes. Lineage: [[vannevar-bush|Vannevar Bush]]'s
    [[memex|Memex]]. This is also a useful AI product case study *(inference)*.
 
 ## Evolving thesis
-*Early, with 2 sources.* A clinician-turned-generalist's advantage in AI product
-work may be domain depth plus rigorous evaluation habits; a vault that links
-medicine to AI makes that advantage visible and reusable *(inference, to be tested
-against sources)*.
+*Early, with 3 sources.* Your edge in AI product work is being a **bridge with no
+translation layer**: clinical depth plus the ability to build and evaluate AI output
+yourself ([[2026-09-26-resume]]). The open question is how best to show this in a
+company or venture setting *(inference)*.
 
 ## Open threads
-- Fill in [[me]]: current role, specialty, target role, timeline.
+- Fill in [[me]]: target role and timeline; impact metrics for shipped apps.
 - Define what "productive" means for you ([[personal-productivity]]).
 - First real sources on AI product development.
 - When to add search ([[qmd]]): revisit at around 100 sources.

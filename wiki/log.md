@@ -20,3 +20,15 @@
 - Created: [[me]] (owner profile), [[generalist]], [[ai-product-development]], [[personal-productivity]].
 - Updated: [[overview]] (rewritten around the vault's purpose and 4 themes), [[llm-wiki]], index.
 - Open threads: current role, specialty, target role, definition of "productive". Proposed a schema tweak for domain tags (pending user approval).
+
+## [2026-09-26] ingest | Resume — Dr. Shubham Kashyap
+- Saved uploaded PDF to `raw/2026-09-26-resume.pdf`; created source page [[2026-09-26-resume]]. Phone and email kept out of the wiki.
+- Created entities: [[mediq]], [[grow-baby-grow]], [[saathi]], [[athira-health]], [[docbot]], [[stemz-healthcare]], [[n8n]], [[claude-code]].
+- Created concepts: [[physician-technologist]], [[ai-assisted-development]].
+- Updated: [[me]] (rewritten as a full profile), [[ai-product-development]] (inferred advantages now sourced), [[generalist]], [[overview]], index.
+- Discussion step skipped: the user asked directly to add the resume. Push held because the repo is public; resolved by the schema entry below.
+
+## [2026-09-26] schema | Privacy rule for a public repo
+- User chose to keep original PDFs out of git: added `raw/*.pdf` to `.gitignore`. The resume PDF is kept local only.
+- Added `raw/2026-09-26-resume.md`, a text copy with email and phone removed; [[2026-09-26-resume]] now points to it.
+- Updated `CLAUDE.md` §9 Privacy: the repo is public; commit redacted copies; flag personal material before pushing.

@@ -251,8 +251,12 @@ what happened, pages created, pages updated, open threads.
 - **Git:** the vault is a git repo. After each completed operation, commit with a
   message mirroring the log header, e.g. `ingest: LLM Wiki pattern`. Push if the
   user's workflow uses a remote.
-- **Privacy:** personal material (health, journal, psychology) stays in this repo.
-  Never send vault content to external services unless the user asks.
+- **Privacy:** this repo is **public** on GitHub. Never commit contact details
+  (phone, email, address), IDs, or other sensitive personal data. Original files
+  holding such data (e.g. `raw/*.pdf`) are git-ignored and kept local only; commit a
+  redacted `.md` text copy with the same slug instead, and point the source page's
+  `raw:` at it. Before pushing personal material (health, journal, psychology), flag
+  it to the user. Never send vault content to external services unless the user asks.
 - **Evolving the schema:** when you notice friction (a page type that doesn't fit,
   a recurring manual step), propose a schema change; apply it only after the user
   agrees, then log it as `schema`.

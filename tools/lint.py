@@ -17,7 +17,8 @@ WIKI = ROOT / "wiki"
 SPECIAL = {"index", "log"}
 TYPES = {"source", "entity", "concept", "synthesis", "overview"}
 REQUIRED = ["title", "type", "created", "updated", "sources", "status"]
-LINK_RE = re.compile(r"\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]")
+# "\|" is Obsidian's escaped pipe inside tables
+LINK_RE = re.compile(r"\[\[([^\]|#\\]+)(?:#[^\]|\\]*)?(?:\\?\|[^\]]*)?\]\]")
 
 
 def frontmatter(text):
