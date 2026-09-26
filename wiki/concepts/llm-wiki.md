@@ -5,7 +5,7 @@ tags: [pkm, llm, knowledge-management]
 aliases: [LLM-maintained wiki, LLM Wiki pattern, second brain]
 created: 2026-09-26
 updated: 2026-09-26
-sources: [2026-09-26-llm-wiki-pattern]
+sources: [2026-09-26-llm-wiki-pattern, 2026-09-26-vault-focus]
 status: active
 ---
 
@@ -63,6 +63,9 @@ curating sources, directing analysis, and asking good questions
 - [[memex]] — the 1945 antecedent; LLM Wiki supplies the missing maintainer
 - [[obsidian]] — the reading/browsing front end ("the IDE")
 - [[qmd]] — search layer for when the index outgrows itself
+- [[me]] — this instance serves a generalist moving from medicine to AI product development ([[2026-09-26-vault-focus]])
+- [[ai-product-development]] — the pattern is itself an AI product design worth studying *(inference)*
 
 ## Sources
 - [[2026-09-26-llm-wiki-pattern]]
+- [[2026-09-26-vault-focus]]
