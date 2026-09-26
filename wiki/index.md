@@ -41,7 +41,7 @@
 
 ## Resources
 *Playbooks for tools you use or plan to use.*
-- [[ponytail|Ponytail]] — coding-agent plugin for minimal code; setup, your workflow per lifecycle stage, clinical safety rule (not installed) (1 source)
+- [[ponytail|Ponytail]] — coding-agent plugin for minimal code; setup, your workflow per lifecycle stage, clinical safety rule. **Decided not to use** (1 source)
 
 ## Syntheses
 *None yet — substantive query answers get filed here.*

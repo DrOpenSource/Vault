@@ -32,8 +32,8 @@ curate sources and ask questions, and the LLM compiles them into linked pages
    [[mediq|MediQ]], [[grow-baby-grow|Grow Baby Grow]] and [[saathi|Saathi]]
    ([[2026-09-26-resume]]).
 3. **Building with AI** — [[ai-assisted-development]], [[claude-code|Claude Code]],
-   [[n8n]]: your production toolkit. Resource playbooks (starting with
-   [[ponytail|Ponytail]]) cover how to use each tool well.
+   [[n8n]]: your production toolkit. Resource playbooks cover how to use each tool well
+   ([[ponytail|Ponytail]] was reviewed and not adopted).
 4. **[[personal-productivity|Productivity]]** — systems and habits, and the vault
    itself as a tool.
 5. **Knowledge management with LLMs** — the pattern this vault runs on,

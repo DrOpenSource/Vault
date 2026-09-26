@@ -41,3 +41,7 @@
 - Created resource playbook [[ponytail]], tailored to the user's workflow, with a clinical-logic safety rule for health apps. Created concept [[yagni]].
 - Updated: [[ai-assisted-development]], [[claude-code]], [[overview]], index (Resources section; Caveman added to Wanted pages).
 - Discussion step skipped: the user gave a direct instruction. Open: install and trial it on one app, then record the results on [[ponytail]].
+
+## [2026-09-26] revise | Decided not to use Ponytail
+- User decision: Ponytail won't be installed. Marked [[ponytail]] with `decision: not using` and a User view note; the page is kept for reference.
+- Updated index, [[overview]], [[claude-code]].

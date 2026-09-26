@@ -6,6 +6,7 @@ url: https://github.com/dietrichgebert/ponytail
 version: v4.10.0
 checked: 2026-09-26
 install_status: not-installed
+decision: not using (2026-09-26)
 tags: [ai-coding, tools, ai-product, playbook]
 aliases: [ponytail plugin, lazy senior dev, /ponytail]
 created: 2026-09-26
@@ -15,6 +16,10 @@ status: active
 ---
 
 # Ponytail — playbook
+
+> [!note] User view
+> **Decided not to use it (2026-09-26).** This page is kept for reference in case
+> the question of AI agents over-building code comes up again.
 
 > A plugin/skill that makes your AI coding agent build **the least code that
 > actually works**, without cutting safety. [GitHub](https://github.com/dietrichgebert/ponytail)

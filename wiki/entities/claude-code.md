@@ -15,7 +15,7 @@ status: stub
 An AI coding agent. It is in your toolkit for building and shipping products ([[2026-09-26-resume]]), and it is the agent that maintains this vault.
 
 ## Plugins
-- [[ponytail]] — minimal-code ruleset. Install with `/plugin marketplace add DietrichGebert/ponytail`, then `/plugin install ponytail@ponytail` as a separate prompt ([[2026-09-26-ponytail]]).
+- [[ponytail]] — minimal-code ruleset; reviewed, and you decided not to use it. Install with `/plugin marketplace add DietrichGebert/ponytail`, then `/plugin install ponytail@ponytail` as a separate prompt ([[2026-09-26-ponytail]]).
 
 ## Connections
 - [[ai-assisted-development]]
