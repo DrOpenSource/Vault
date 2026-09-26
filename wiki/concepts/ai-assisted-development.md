@@ -5,7 +5,7 @@ tags: [ai-product, ai-coding, tools]
 aliases: [Vibe coding, Vibe-coding, Agentic coding, Building with AI coding agents]
 created: 2026-09-26
 updated: 2026-09-26
-sources: [2026-09-26-resume]
+sources: [2026-09-26-resume, 2026-09-26-ponytail]
 status: stub
 ---
 
@@ -27,10 +27,18 @@ Tools: [[claude-code|Claude Code]], Antigravity, [[n8n]] ([[2026-09-26-resume]])
 > with an engineering team, minus the team" ([[2026-09-26-resume]]). So skill with
 > AI agents doubles as practice in product management.
 
+## Risk: agents over-build
+AI coding agents tend to add dependencies, wrappers and abstractions the task doesn't
+need. [[ponytail|Ponytail]] guards against this with a YAGNI → stdlib → native ladder
+and reports about 54% less code at equal safety ([[2026-09-26-ponytail]]). See
+[[yagni]].
+
 ## Connections
 - [[ai-product-development]]
 - [[physician-technologist]]
 - [[llm-wiki]] — another way of working through agents
+- [[ponytail]] — playbook for keeping agent output minimal
 
 ## Sources
 - [[2026-09-26-resume]]
+- [[2026-09-26-ponytail]]

@@ -5,7 +5,7 @@ tags: [meta]
 aliases: [Big picture, Home]
 created: 2026-09-26
 updated: 2026-09-26
-sources: [2026-09-26-llm-wiki-pattern, 2026-09-26-vault-focus, 2026-09-26-resume]
+sources: [2026-09-26-llm-wiki-pattern, 2026-09-26-vault-focus, 2026-09-26-resume, 2026-09-26-ponytail]
 status: active
 ---
 
@@ -32,7 +32,8 @@ curate sources and ask questions, and the LLM compiles them into linked pages
    [[mediq|MediQ]], [[grow-baby-grow|Grow Baby Grow]] and [[saathi|Saathi]]
    ([[2026-09-26-resume]]).
 3. **Building with AI** — [[ai-assisted-development]], [[claude-code|Claude Code]],
-   [[n8n]]: your production toolkit.
+   [[n8n]]: your production toolkit. Resource playbooks (starting with
+   [[ponytail|Ponytail]]) cover how to use each tool well.
 4. **[[personal-productivity|Productivity]]** — systems and habits, and the vault
    itself as a tool.
 5. **Knowledge management with LLMs** — the pattern this vault runs on,

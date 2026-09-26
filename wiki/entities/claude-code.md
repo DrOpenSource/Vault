@@ -6,13 +6,16 @@ tags: [tools, ai-coding]
 aliases: []
 created: 2026-09-26
 updated: 2026-09-26
-sources: [2026-09-26-resume]
+sources: [2026-09-26-resume, 2026-09-26-ponytail]
 status: stub
 ---
 
 # Claude Code
 
 An AI coding agent. It is in your toolkit for building and shipping products ([[2026-09-26-resume]]), and it is the agent that maintains this vault.
+
+## Plugins
+- [[ponytail]] — minimal-code ruleset. Install with `/plugin marketplace add DietrichGebert/ponytail`, then `/plugin install ponytail@ponytail` as a separate prompt ([[2026-09-26-ponytail]]).
 
 ## Connections
 - [[ai-assisted-development]]
@@ -21,3 +24,4 @@ An AI coding agent. It is in your toolkit for building and shipping products ([[
 
 ## Sources
 - [[2026-09-26-resume]]
+- [[2026-09-26-ponytail]]

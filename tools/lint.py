@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 WIKI = ROOT / "wiki"
 SPECIAL = {"index", "log"}
-TYPES = {"source", "entity", "concept", "synthesis", "overview"}
+TYPES = {"source", "entity", "concept", "synthesis", "overview", "resource"}
 REQUIRED = ["title", "type", "created", "updated", "sources", "status"]
 # "\|" is Obsidian's escaped pipe inside tables
 LINK_RE = re.compile(r"\[\[([^\]|#\\]+)(?:#[^\]|\\]*)?(?:\\?\|[^\]]*)?\]\]")

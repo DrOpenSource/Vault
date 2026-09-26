@@ -32,3 +32,12 @@
 - User chose to keep original PDFs out of git: added `raw/*.pdf` to `.gitignore`. The resume PDF is kept local only.
 - Added `raw/2026-09-26-resume.md`, a text copy with email and phone removed; [[2026-09-26-resume]] now points to it.
 - Updated `CLAUDE.md` §9 Privacy: the repo is public; commit redacted copies; flag personal material before pushing.
+
+## [2026-09-26] schema | Resources section
+- At the user's request, added `wiki/resources/` and page type `resource` (a playbook: when to use → setup → how to use it best → commands → pitfalls) to `CLAUDE.md` §2/§4/§7, `templates/resource.md`, `tools/lint.py`, and an index section.
+
+## [2026-09-26] ingest | Ponytail (GitHub repo)
+- Cloned github.com/dietrichgebert/ponytail (v4.10.0); saved README and core SKILL.md files verbatim to `raw/2026-09-26-ponytail.md`; created source page [[2026-09-26-ponytail]].
+- Created resource playbook [[ponytail]], tailored to the user's workflow, with a clinical-logic safety rule for health apps. Created concept [[yagni]].
+- Updated: [[ai-assisted-development]], [[claude-code]], [[overview]], index (Resources section; Caveman added to Wanted pages).
+- Discussion step skipped: the user gave a direct instruction. Open: install and trial it on one app, then record the results on [[ponytail]].

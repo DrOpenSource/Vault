@@ -40,6 +40,7 @@ wiki/
   entities/              people, organizations, products, tools, places, works
   concepts/              ideas, methods, theories, themes, recurring questions
   syntheses/             filed query answers, comparisons, analyses, theses
+  resources/             playbooks for tools, repos, courses you actively use
 templates/               page skeletons for each page type
 tools/                   helper scripts
 ```
@@ -49,6 +50,8 @@ tools/                   helper scripts
 - Is it an *idea* you could explain without naming anyone (RAG, spaced repetition, burnout)? → `concepts/`
 - Is it *one raw document's summary*? → `sources/`
 - Is it *an answer/analysis that draws on several pages*? → `syntheses/`
+- Is it *a tool, repo, course or template you plan to use*, needing a how-to? → `resources/`
+  (a resource replaces the entity page for that thing; don't create both)
 
 Do not create further subfolders without updating this schema. Use `tags` in
 frontmatter for finer grouping instead.
@@ -83,7 +86,7 @@ Every wiki page (except `index.md` and `log.md`) starts with YAML frontmatter:
 ```yaml
 ---
 title: Human Readable Title
-type: source | entity | concept | synthesis | overview
+type: source | entity | concept | synthesis | overview | resource
 tags: [topic, subtopic]
 aliases: []
 created: YYYY-MM-DD
@@ -99,6 +102,9 @@ Type-specific extra fields:
   `url` (if any).
 - `entity`: `entity_kind` (person | organization | product | tool | place | work | other).
 - `synthesis`: `question` — the question it answers.
+- `resource`: `resource_kind` (repo | plugin | app | course | book | template | other),
+  `url`, `version` (as checked), `checked` (date last verified), `install_status`
+  (not-installed | installed | trialling | retired).
 
 Body structure — use the templates in `templates/`:
 - **source:** TL;DR → Key takeaways → Notable claims (with quotes where useful) →
@@ -106,6 +112,9 @@ Body structure — use the templates in `templates/`:
 - **entity / concept:** one-paragraph definition → sections that grow over time →
   `## Connections` → `## Sources`.
 - **synthesis:** Question → Answer → Reasoning/evidence → Caveats → Sources.
+- **resource** (a playbook, written like a skill document): What it is → When to use
+  it / when not → Setup → How to use it best (your workflow) → Commands / reference →
+  Pitfalls & caveats → Connections → Sources. Tailor "how to use it best" to [[me]].
 
 ### Citations
 Every non-obvious factual claim on an entity, concept, synthesis, or overview page
@@ -213,7 +222,7 @@ A typical ingest touches 5–15 pages. That's expected.
 ## 7. `index.md` and `log.md`
 
 **`wiki/index.md`** — content-oriented catalog. Sections: Overview, Sources,
-Entities, Concepts, Syntheses, Wanted pages. One line per page:
+Entities, Concepts, Resources, Syntheses, Wanted pages. One line per page:
 `- [[slug|Title]] — one-line summary (N sources)` (source entries use
 `— author, kind, one-line summary`). Keep entries alphabetical within a section,
 except Sources, which are newest first. Update a stats line at the top.
