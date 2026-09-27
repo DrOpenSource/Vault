@@ -111,6 +111,9 @@ margins at high volume.
 - I can build and document this (spec, MVP, landing page), but I can't run the
   business, take payments or apply to jobs for anyone.
 
+## Update 2026-09-27
+A personal, human-in-the-loop version now exists for you: [[job-scout]]. It uses public job APIs, transparent scoring and no auto-submit. Using it yourself is the first test of option A.
+
 ## Suggested next step
 Run `/full-stack-dev think` on option A in a new project. The forcing questions,
 especially Q1 (demand evidence) and Q3 (name the specific clinician), are the right

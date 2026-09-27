@@ -65,3 +65,10 @@
 - Cloned github.com/Pickle-Pixel/ApplyPilot (v0.3.0, AGPL-3.0); saved the README to `raw/2026-09-27-applypilot.md`. Read the launcher and prompt code: bypassPermissions Claude Code sessions, CAPTCHA-solving option, automatic EEO/work-authorization answers.
 - Created [[2026-09-27-applypilot]], entity [[applypilot]], synthesis [[applypilot-monetization]]. Verdict: don't resell the auto-apply bot; validate a human-in-the-loop clinician career copilot instead.
 - Updated: [[ai-product-development]], [[me]], [[overview]], index.
+
+## [2026-09-27] skill | job-scout (personal job finder)
+- User asked for a job finder that works for them: remote, part-time OK, MBBS with 10 years' experience, India, plus AI product experience.
+- Built `tools/job-scout/`: stdlib-only Python; public job APIs (Remotive, Remote OK, Himalayas, Jobicy, Greenhouse/Lever/Ashby boards); transparent scoring from `profile.json`; Markdown/CSV report; no auto-apply. `tools/job-scout/output/` is git-ignored.
+- Tests: 11 offline tests pass; the live run here skipped every source (network policy 403) and still produced a report. `git subtree split` verified, and the split copy passes its tests standalone.
+- Schema: `tools/` now also holds self-contained personal utilities. Created resource [[job-scout]]; updated [[applypilot-monetization]], [[me]], [[overview]], index.
+- Open: first live run on the user's machine; check board tokens; tune the profile.

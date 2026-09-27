@@ -32,7 +32,8 @@ curate sources and ask questions, and the LLM compiles them into linked pages
    [[mediq|MediQ]], [[grow-baby-grow|Grow Baby Grow]] and [[saathi|Saathi]]
    ([[2026-09-26-resume]]). New product idea: a **career copilot for clinicians
    moving into health tech**, instead of reselling [[applypilot|ApplyPilot]]'s
-   auto-apply bot ([[applypilot-monetization]]).
+   auto-apply bot ([[applypilot-monetization]]). You're testing it on yourself first
+   with [[job-scout]] (remote, part-time roles).
 3. **Building with AI** — [[ai-assisted-development]], [[claude-code|Claude Code]],
    [[n8n]]: your production toolkit. Current focus: **managing agents as a team**,
    meaning one sprint process per lane via [[gstack]] (condensed into your skill) and lanes limited by

@@ -69,6 +69,9 @@ From [[2026-09-26-resume]]:
 > step may be less about "entering" AI product and more about showing this in a
 > company or venture setting *(inference)*.
 
+## Job search (from 2026-09-27)
+- Looking for **remote, preferably part-time** roles that combine medicine with AI/product work, based in India. Tool: [[job-scout]].
+
 ## Open questions
 - Target role and timeline (company PM, clinical AI lead, founder)? A founder path is being explored: [[applypilot-monetization]] (option A).
 - Impact metrics for shipped apps (users, ratings, retention)?

@@ -1,7 +1,7 @@
 # Index
 
 *Content catalog of the whole wiki. Read this first when answering any question.*
-*Stats: 7 sources · 13 entities · 11 concepts · 3 resources · 3 syntheses · 1 skill · last updated 2026-09-27*
+*Stats: 7 sources · 13 entities · 11 concepts · 4 resources · 3 syntheses · 1 skill · 1 tool · last updated 2026-09-27*
 
 ## Overview
 - [[overview|Overview]] — vault purpose (generalist, medicine → AI product, productivity), themes, thesis (7 sources)
@@ -47,6 +47,7 @@
 ## Resources
 *Playbooks for tools you use or plan to use.*
 - [[full-stack-dev|Full-Stack Dev (skill)]] — **your own Claude Code skill** in `skills/full-stack-dev/`: 9-stage sprint, clinical gate, installer for any project (1 source)
+- [[job-scout|job-scout]] — **your job finder** in `tools/job-scout/`: remote/part-time roles scored for MBBS + AI product; you apply yourself (2 sources)
 - [[gstack|gstack]] — sprint skill pack for Claude Code; reference for the original. **Condensed into Full-Stack Dev** (2 sources)
 - [[ponytail|Ponytail]] — coding-agent plugin for minimal code; setup, your workflow per lifecycle stage, clinical safety rule. **Decided not to use** (1 source)
 
