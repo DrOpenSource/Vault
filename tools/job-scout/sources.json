@@ -26,9 +26,9 @@
       "tags": [
         "healthcare",
         "medical",
-        "product",
-        "ai"
-      ]
+        "product"
+      ],
+      "_note": "Tag 'ai' returned HTTP 400 on 2026-09-27 (too short for Jobicy?); AI roles come in via the other sources."
     }
   },
   "_company_boards_help": "Add companies whose careers page is hosted on Greenhouse (boards.greenhouse.io/<token>), Lever (jobs.lever.co/<token>) or Ashby (jobs.ashbyhq.com/<token>). The token is the last part of that URL. Unknown tokens are skipped and reported, never fatal. Tokens below were confirmed with --check-boards on 2026-09-27. Re-run it after adding new ones.",

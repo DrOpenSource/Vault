@@ -80,3 +80,7 @@
 - The user's first run on Windows: 1 test failed with `UnicodeEncodeError` (cp1252 can't encode `≥`/`—`/🆕). Reproduced here under a non-UTF-8 locale.
 - Fixed: every file read/write now uses UTF-8 (CSV as `utf-8-sig` for Excel); console output can no longer crash on special characters. Added a guard test (12 tests), which passes under both UTF-8 and non-UTF-8 locales.
 - `--check-boards` on the user's machine: 4 boards OK (greenhouse flatironhealth, turing, scaleai; ashby openevidence), 7 removed (404). Updated [[job-scout]] to v1.0.1.
+
+## [2026-09-27] revise | job-scout: first live run
+- The user's first live run fetched ~700 jobs: remotive 6×18, remoteok 99, himalayas 60, jobicy 150, greenhouse flatironhealth 27 / turing 34 / scaleai 203, ashby openevidence 10. The live parsers work.
+- Jobicy tag `ai` → HTTP 400; removed. The report still crashed because the user hadn't pulled the v1.0.1 Windows fix yet.
