@@ -156,6 +156,7 @@ files, **then** `/plugin remove ponytail` ([[2026-09-26-ponytail]]).
 - [[yagni]] — the principle behind the first rung
 - [[ai-assisted-development]] — guards against AI agents over-building
 - [[claude-code]] — main host; installs as a plugin
+- [[gstack]] — alternative skill pack with the opposite philosophy ("Boil the Ocean")
 - [[physician-technologist]] — the clinical safety rule above is where your
   clinical judgement comes in
 

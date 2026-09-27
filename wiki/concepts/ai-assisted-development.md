@@ -4,8 +4,8 @@ type: concept
 tags: [ai-product, ai-coding, tools]
 aliases: [Vibe coding, Vibe-coding, Agentic coding, Building with AI coding agents]
 created: 2026-09-26
-updated: 2026-09-26
-sources: [2026-09-26-resume, 2026-09-26-ponytail]
+updated: 2026-09-27
+sources: [2026-09-26-resume, 2026-09-26-ponytail, 2026-09-27-gstack]
 status: stub
 ---
 
@@ -33,12 +33,18 @@ need. [[ponytail|Ponytail]] guards against this with a YAGNI → stdlib → nati
 and reports about 54% less code at equal safety ([[2026-09-26-ponytail]]). See
 [[yagni]].
 
+## Managing several agents
+The bottleneck moves from writing code to **process and review**. [[gstack]] gives every agent the same Think → Plan → Build → Review → Test → Ship → Reflect sprint, which its author says is what makes 10–15 parallel sessions workable ([[2026-09-27-gstack]]). Your plan: [[agent-management-plan]].
+
 ## Connections
 - [[ai-product-development]]
 - [[physician-technologist]]
 - [[llm-wiki]] — another way of working through agents
-- [[ponytail]] — playbook for keeping agent output minimal
+- [[ponytail]] — playbook for keeping agent output minimal (not adopted)
+- [[gstack]] — sprint process for agents (trialling)
+- [[agent-harness]] — what the agents run inside
 
 ## Sources
 - [[2026-09-26-resume]]
 - [[2026-09-26-ponytail]]
+- [[2026-09-27-gstack]]

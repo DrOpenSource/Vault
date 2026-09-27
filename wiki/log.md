@@ -45,3 +45,10 @@
 ## [2026-09-26] revise | Decided not to use Ponytail
 - User decision: Ponytail won't be installed. Marked [[ponytail]] with `decision: not using` and a User view note; the page is kept for reference.
 - Updated index, [[overview]], [[claude-code]].
+
+## [2026-09-27] ingest | gstack (GitHub repo) + Claude API pricing
+- Cloned github.com/garrytan/gstack (v1.91.2.0) and **installed it in the cloud session** (browser skipped). Measured with `gstack-context-bill`: about 7K always-on tokens across 55 skills; 3K–51K per skill used. No hooks added; telemetry off.
+- Saved `raw/2026-09-27-gstack.md` (README, digest, ethos excerpt) and `raw/2026-09-27-claude-pricing.md` (price table, caching, four agent approaches). Created source pages [[2026-09-27-gstack]], [[2026-09-27-claude-pricing]].
+- Created resource [[gstack]] (trialling), concept [[agent-harness]], syntheses [[agent-management-plan]] and [[harness-cost-comparison]].
+- Updated: [[claude-code]], [[ai-assisted-development]], [[yagni]] (contradiction callout: YAGNI vs "Boil the Ocean"), [[ponytail]], [[overview]], index (+3 Wanted pages).
+- Discussion step skipped: the user gave a direct instruction. Open: subscription plan prices; the Phase 1 lane choice.
