@@ -89,3 +89,7 @@
 - The user split `tools/job-scout` into the private repo `DrOpenSource/job-scout` with `git subtree split` (history kept; GitHub shows it private, with Python code).
 - Removed `tools/job-scout/` and its `.gitignore` entry from the vault; its history remains in the vault's git log. [[job-scout]] now points to the new repo and local folder. Updated `CLAUDE.md` §1 Tools row and index.
 - Open: connect `DrOpenSource/job-scout` to future sessions so Claude can keep working on it there.
+
+## [2026-09-27] setup | Connected DrOpenSource/job-scout
+- At the user's request, added the private repo `DrOpenSource/job-scout` to the session (push access) and cloned it. HEAD `36476cb` ("Ignore local results") matches the last vault version of the tool; 12/12 tests pass; `.gitignore` is correct.
+- Future changes to job-scout happen in that repo; [[job-scout]] (the playbook) stays in the vault.
