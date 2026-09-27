@@ -59,3 +59,9 @@
 - Tested: project install on a scratch repo (re-run safe, settings merged with backup, valid JSON); global install; skill loaded in Claude Code and `status` ran.
 - Schema: added `skills/` layer, `resource_kind: skill`, the `skill` operation and log op. Created resource [[full-stack-dev]].
 - Updated: [[gstack]] (not installed; condensed), [[agent-management-plan]] (Phase 0/1 now use the skill; gstack install struck through), [[harness-cost-comparison]] (User view: skip harness), [[claude-code]], [[ai-assisted-development]], [[overview]], index.
+
+## [2026-09-27] ingest | ApplyPilot (GitHub repo) + monetization query
+- Fast-forwarded `main` to `c28daa6` at the user's request (Full-Stack Dev skill now on `main`).
+- Cloned github.com/Pickle-Pixel/ApplyPilot (v0.3.0, AGPL-3.0); saved the README to `raw/2026-09-27-applypilot.md`. Read the launcher and prompt code: bypassPermissions Claude Code sessions, CAPTCHA-solving option, automatic EEO/work-authorization answers.
+- Created [[2026-09-27-applypilot]], entity [[applypilot]], synthesis [[applypilot-monetization]]. Verdict: don't resell the auto-apply bot; validate a human-in-the-loop clinician career copilot instead.
+- Updated: [[ai-product-development]], [[me]], [[overview]], index.

@@ -5,7 +5,7 @@ tags: [meta]
 aliases: [Big picture, Home]
 created: 2026-09-26
 updated: 2026-09-27
-sources: [2026-09-26-llm-wiki-pattern, 2026-09-26-vault-focus, 2026-09-26-resume, 2026-09-26-ponytail, 2026-09-27-gstack, 2026-09-27-claude-pricing]
+sources: [2026-09-26-llm-wiki-pattern, 2026-09-26-vault-focus, 2026-09-26-resume, 2026-09-26-ponytail, 2026-09-27-gstack, 2026-09-27-claude-pricing, 2026-09-27-applypilot]
 status: active
 ---
 
@@ -30,7 +30,9 @@ curate sources and ask questions, and the LLM compiles them into linked pages
 2. **Medicine → AI bridge** — the [[physician-technologist]] profile: clinical
    problem → spec → AI build → clinical check of output → ship. Shown in practice by
    [[mediq|MediQ]], [[grow-baby-grow|Grow Baby Grow]] and [[saathi|Saathi]]
-   ([[2026-09-26-resume]]).
+   ([[2026-09-26-resume]]). New product idea: a **career copilot for clinicians
+   moving into health tech**, instead of reselling [[applypilot|ApplyPilot]]'s
+   auto-apply bot ([[applypilot-monetization]]).
 3. **Building with AI** — [[ai-assisted-development]], [[claude-code|Claude Code]],
    [[n8n]]: your production toolkit. Current focus: **managing agents as a team**,
    meaning one sprint process per lane via [[gstack]] (condensed into your skill) and lanes limited by
@@ -46,7 +48,7 @@ curate sources and ask questions, and the LLM compiles them into linked pages
    [[memex|Memex]]. This is also a useful AI product case study *(inference)*.
 
 ## Evolving thesis
-*Early, with 6 sources.* Your edge in AI product work is being a **bridge with no
+*Early, with 7 sources.* Your edge in AI product work is being a **bridge with no
 translation layer**: clinical depth plus the ability to build and evaluate AI output
 yourself ([[2026-09-26-resume]]). The open question is how best to show this in a
 company or venture setting *(inference)*.
@@ -55,6 +57,7 @@ company or venture setting *(inference)*.
 - Fill in [[me]]: target role and timeline; impact metrics for shipped apps.
 - Define what "productive" means for you ([[personal-productivity]]).
 - Install [[full-stack-dev]] locally, then run Phase 1 of [[agent-management-plan]] and ingest the first `/retro`.
+- Validate the clinician career-copilot idea with `/full-stack-dev think` ([[applypilot-monetization]]).
 - Add current subscription plan prices to finish [[harness-cost-comparison]].
 - First real sources on AI product development.
 - When to add search ([[qmd]]): revisit at around 100 sources.

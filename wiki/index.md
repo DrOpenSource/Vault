@@ -1,13 +1,14 @@
 # Index
 
 *Content catalog of the whole wiki. Read this first when answering any question.*
-*Stats: 6 sources · 12 entities · 11 concepts · 3 resources · 2 syntheses · 1 skill · last updated 2026-09-27*
+*Stats: 7 sources · 13 entities · 11 concepts · 3 resources · 3 syntheses · 1 skill · last updated 2026-09-27*
 
 ## Overview
-- [[overview|Overview]] — vault purpose (generalist, medicine → AI product, productivity), themes, thesis (6 sources)
+- [[overview|Overview]] — vault purpose (generalist, medicine → AI product, productivity), themes, thesis (7 sources)
 
 ## Sources
 *Newest first.*
+- [[2026-09-27-applypilot|ApplyPilot (GitHub repo)]] — Pickle-Pixel, code repo (AGPL-3.0); autonomous job-application pipeline driving Claude Code in Chrome
 - [[2026-09-27-gstack|gstack (GitHub repo)]] — Garry Tan, code repo; ~55 Claude Code skills running one sprint process; trial measurements
 - [[2026-09-27-claude-pricing|Claude API pricing and agent-building options]] — Anthropic, data; per-token prices, caching and batch discounts, four ways to build an agent
 - [[2026-09-26-ponytail|Ponytail (GitHub repo)]] — Dietrich Gebert, code repo; plugin that makes coding agents build minimal code without cutting safety
@@ -16,6 +17,7 @@
 - [[2026-09-26-llm-wiki-pattern|LLM Wiki: a pattern for personal knowledge bases]] — unknown author, note; the founding idea file for this vault: an LLM compiles sources into a persistent, compounding wiki
 
 ## Entities
+- [[applypilot|ApplyPilot]] — open-source auto-apply job agent; evaluated for monetization (1 source)
 - [[athira-health|Athira Health]] — freelance consulting 2023–24: AI-adoption roadmap, problem statements and evaluation criteria (1 source)
 - [[claude-code|Claude Code]] — AI coding agent and harness in your build toolkit; maintains this vault; hosts gstack (4 sources)
 - [[docbot|DocBot]] — freelance clinical SME 2021–24: product and process checked against clinical and regulatory constraints (1 source)
@@ -49,6 +51,7 @@
 - [[ponytail|Ponytail]] — coding-agent plugin for minimal code; setup, your workflow per lifecycle stage, clinical safety rule. **Decided not to use** (1 source)
 
 ## Syntheses
+- [[applypilot-monetization|Can I monetize ApplyPilot?]] — license, legal/platform risk, per-application costs, ranked options; recommends a clinician career copilot (3 sources)
 - [[agent-management-plan|Plan: managing my Claude agents better]] — phased plan, operating rules, lane board (3 sources)
 - [[harness-cost-comparison|Cost: Claude Code subscription vs your own harness]] — what a harness is; API cost per hour and per month; decision table (2 sources)
 

@@ -4,8 +4,8 @@ type: concept
 tags: [ai-product, career]
 aliases: [AI product management, AI PM, Building AI products]
 created: 2026-09-26
-updated: 2026-09-26
-sources: [2026-09-26-vault-focus, 2026-09-26-resume]
+updated: 2026-09-27
+sources: [2026-09-26-vault-focus, 2026-09-26-resume, 2026-09-27-applypilot]
 status: active
 ---
 
@@ -40,6 +40,9 @@ Solo, full-lifecycle building with AI coding agents: discovery → spec → buil
 → release, for 12 published apps ([[ai-assisted-development]],
 [[2026-09-26-resume]]).
 
+## Product ideas under evaluation
+- **Clinician → health-tech career copilot**: a human-in-the-loop take on [[applypilot|ApplyPilot]]'s idea, preferred over reselling the auto-apply bot ([[applypilot-monetization]]).
+
 ## Connections
 - [[me]] — your target field
 - [[physician-technologist]] — your version of this role
@@ -51,3 +54,4 @@ Solo, full-lifecycle building with AI coding agents: discovery → spec → buil
 ## Sources
 - [[2026-09-26-vault-focus]]
 - [[2026-09-26-resume]]
+- [[2026-09-27-applypilot]]
