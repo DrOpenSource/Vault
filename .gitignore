@@ -9,5 +9,3 @@ __pycache__/
 raw/*.pdf
 raw/assets/*.pdf
 
-# job-scout: personal results and API cache stay local
-tools/job-scout/output/

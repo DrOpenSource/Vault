@@ -84,3 +84,8 @@
 ## [2026-09-27] revise | job-scout: first live run
 - The user's first live run fetched ~700 jobs: remotive 6×18, remoteok 99, himalayas 60, jobicy 150, greenhouse flatironhealth 27 / turing 34 / scaleai 203, ashby openevidence 10. The live parsers work.
 - Jobicy tag `ai` → HTTP 400; removed. The report still crashed because the user hadn't pulled the v1.0.1 Windows fix yet.
+
+## [2026-09-27] revise | job-scout moved to its own private repo
+- The user split `tools/job-scout` into the private repo `DrOpenSource/job-scout` with `git subtree split` (history kept; GitHub shows it private, with Python code).
+- Removed `tools/job-scout/` and its `.gitignore` entry from the vault; its history remains in the vault's git log. [[job-scout]] now points to the new repo and local folder. Updated `CLAUDE.md` §1 Tools row and index.
+- Open: connect `DrOpenSource/job-scout` to future sessions so Claude can keep working on it there.

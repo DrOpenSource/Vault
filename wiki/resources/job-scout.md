@@ -2,7 +2,7 @@
 title: job-scout
 type: resource
 resource_kind: app
-url: tools/job-scout/
+url: https://github.com/DrOpenSource/job-scout
 version: 1.0.1
 checked: 2026-09-27
 install_status: installed
@@ -17,7 +17,8 @@ status: active
 # job-scout — playbook
 
 > **Your personal job finder**, built 2026-09-27 in
-> [`tools/job-scout/`](../../tools/job-scout/README.md). It finds **remote,
+> the vault, and moved on 2026-09-27 to its own **private repo**
+> [DrOpenSource/job-scout](https://github.com/DrOpenSource/job-scout). It finds **remote,
 > preferably part-time** roles that fit an MBBS with 10+ years of clinical and
 > leadership work plus AI product experience ([[2026-09-26-resume]]). It takes the
 > safe half of [[applypilot|ApplyPilot]]'s idea (find → score) and leaves out
@@ -38,7 +39,8 @@ report. **You apply yourself.**
 
 ## Setup
 ```bash
-cd tools/job-scout
+cd C:\Users\user\Desktop\Dr_Opensource\job-scout   # your local clone of the private repo
+git pull                                             # get updates
 python3 job_scout.py --check-boards   # once: prune company tokens that don't exist
 python3 job_scout.py                  # daily
 ```

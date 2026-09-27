@@ -20,7 +20,7 @@ the wiki works, update this file (see §9) and log it.
 | Wiki | `wiki/` | You | You create and edit everything here. |
 | Schema | `CLAUDE.md` | Both | Co-evolved. Change only with the user's agreement. |
 | Templates | `templates/` | You | Page skeletons. Copy, don't link. |
-| Tools | `tools/` | You | Helper scripts (e.g. `tools/lint.py`) and small personal utilities, one self-contained folder each (e.g. `tools/job-scout/`) so they can be split into their own repo later. Each utility has a playbook in `wiki/resources/`. |
+| Tools | `tools/` | You | Helper scripts (e.g. `tools/lint.py`) and small personal utilities, one self-contained folder each so they can be split into their own repo later (as `job-scout` was, into the private repo `DrOpenSource/job-scout`). Each utility has a playbook in `wiki/resources/`, which stays in the vault after a split. |
 | Skills | `skills/` | You (user approves) | Portable Claude Code skills the user installs in other projects. Each has a playbook in `wiki/resources/`. |
 
 The only exception to raw immutability: if the user drops a source into `raw/` with
