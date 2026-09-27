@@ -257,6 +257,11 @@ what happened, pages created, pages updated, open threads.
 - Keep the user's voice separate from sources' voices (`> [!note] User view`).
 - Dates are ISO `YYYY-MM-DD`. Use today's date for `created`/`updated`/log entries.
 - Don't pad. A stub with three true sentences beats a page of filler.
+- **Hand-holding for manual steps (user preference):** whenever the user has to do
+  something themselves (install, run, configure, click through a settings page), give a
+  step-by-step guide **in the chat reply**, not only in a file: numbered steps, exact
+  commands to copy, what they should see when it works, and what to do if it fails.
+  Cover Mac/Linux and Windows when commands differ.
 
 ---
 

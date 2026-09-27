@@ -72,3 +72,6 @@
 - Tests: 11 offline tests pass; the live run here skipped every source (network policy 403) and still produced a report. `git subtree split` verified, and the split copy passes its tests standalone.
 - Schema: `tools/` now also holds self-contained personal utilities. Created resource [[job-scout]]; updated [[applypilot-monetization]], [[me]], [[overview]], index.
 - Open: first live run on the user's machine; check board tokens; tune the profile.
+
+## [2026-09-27] schema | Step-by-step guides in chat
+- User preference: always give manual steps as a hand-holding guide in the chat (numbered steps, exact commands, expected output, fixes). Added to `CLAUDE.md` §8 Style.
