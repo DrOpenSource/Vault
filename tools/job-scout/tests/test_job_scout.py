@@ -11,7 +11,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import job_scout as js  # noqa: E402
 
-PROFILE = json.loads((Path(js.HERE) / "profile.json").read_text())
+PROFILE = json.loads((Path(js.HERE) / "profile.json").read_text(encoding="utf-8"))
 TODAY = date(2026, 9, 27)
 
 
@@ -100,13 +100,23 @@ class EndToEndOffline(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             js.OUT = Path(tmp)
             src = Path(tmp) / "jobs.json"
-            src.write_text(json.dumps(jobs))
+            src.write_text(json.dumps(jobs), encoding="utf-8")
             self.assertEqual(js.main(["--offline", str(src)]), 0)
-            md = next(Path(tmp).glob("jobs-*.md")).read_text()
+            md = next(Path(tmp).glob("jobs-*.md")).read_text(encoding="utf-8")
             self.assertIn("Physician AI Trainer", md)
             self.assertNotIn("Warehouse", md)
             self.assertEqual(md.count("Physician AI Trainer"), 1)   # deduped
             self.assertIn("🆕", md)
+
+
+class WindowsSafetyTests(unittest.TestCase):
+    def test_every_file_io_call_sets_utf8(self):
+        """Windows defaults to cp1252; any read/write without encoding= breaks on ≥, —, 🆕."""
+        import re
+        src = (Path(js.HERE) / "job_scout.py").read_text(encoding="utf-8")
+        calls = re.findall(r"\.(?:read_text|write_text|open)\([^\n]*", src)
+        missing = [c for c in calls if "encoding=" not in c]
+        self.assertEqual(missing, [], f"file I/O without encoding=: {missing}")
 
 
 if __name__ == "__main__":

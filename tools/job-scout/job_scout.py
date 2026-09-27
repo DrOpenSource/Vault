@@ -77,11 +77,11 @@ def fetch_json(url, ua, use_cache, cache_hours):
     CACHE.mkdir(parents=True, exist_ok=True)
     cache_file = CACHE / (re.sub(r"[^A-Za-z0-9]+", "_", url)[:150] + ".json")
     if use_cache and cache_file.exists() and time.time() - cache_file.stat().st_mtime < cache_hours * 3600:
-        return json.loads(cache_file.read_text())
+        return json.loads(cache_file.read_text(encoding="utf-8"))
     req = urllib.request.Request(url, headers={"User-Agent": ua, "Accept": "application/json"})
     with urllib.request.urlopen(req, timeout=30) as resp:
         data = json.loads(resp.read().decode("utf-8", "replace"))
-    cache_file.write_text(json.dumps(data))
+    cache_file.write_text(json.dumps(data), encoding="utf-8")
     return data
 
 
@@ -278,7 +278,7 @@ def dedupe(jobs):
 def write_reports(jobs, profile, errors, stamp):
     OUT.mkdir(exist_ok=True)
     seen_file = OUT / "seen.json"
-    seen = set(json.loads(seen_file.read_text())) if seen_file.exists() else set()
+    seen = set(json.loads(seen_file.read_text(encoding="utf-8"))) if seen_file.exists() else set()
 
     ranked = sorted((j for j in jobs if j.score >= profile.get("min_score", 25)),
                     key=lambda j: j.score, reverse=True)[: profile.get("top_n", 40)]
@@ -301,14 +301,14 @@ def write_reports(jobs, profile, errors, stamp):
         md += ["", "<details><summary>Sources skipped this run</summary>", ""] + [f"- {e}" for e in errors] + ["", "</details>"]
 
     md_path, csv_path = OUT / f"jobs-{stamp}.md", OUT / f"jobs-{stamp}.csv"
-    md_path.write_text("\n".join(md) + "\n")
-    with csv_path.open("w", newline="") as f:
+    md_path.write_text("\n".join(md) + "\n", encoding="utf-8")
+    with csv_path.open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)
         w.writerow(["score", "title", "company", "type", "location", "posted", "reasons", "flags", "source", "url"])
         for j in ranked:
             w.writerow([j.score, j.title, j.company, j.job_type, j.location, j.posted,
                         "; ".join(j.reasons), "; ".join(j.flags), j.source, j.url])
-    seen_file.write_text(json.dumps(sorted(seen | {j.key for j in ranked})))
+    seen_file.write_text(json.dumps(sorted(seen | {j.key for j in ranked})), encoding="utf-8")
     return md_path, csv_path, ranked
 
 
@@ -333,15 +333,18 @@ def main(argv=None):
     ap.add_argument("--no-cache", action="store_true")
     ap.add_argument("--check-boards", action="store_true")
     args = ap.parse_args(argv)
+    for stream in (sys.stdout, sys.stderr):   # Windows consoles default to cp1252
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(errors="replace")
 
-    profile = json.loads(args.profile.read_text())
-    sources = json.loads(args.sources.read_text())
+    profile = json.loads(args.profile.read_text(encoding="utf-8"))
+    sources = json.loads(args.sources.read_text(encoding="utf-8"))
     if args.check_boards:
         check_boards(sources)
         return 0
 
     if args.offline:
-        raw = json.loads(args.offline.read_text())
+        raw = json.loads(args.offline.read_text(encoding="utf-8"))
         jobs, errors = [Job(**{k: v for k, v in r.items() if k in Job.__dataclass_fields__}) for r in raw], []
     else:
         print("Fetching jobs…", file=sys.stderr)

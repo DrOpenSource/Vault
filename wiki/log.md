@@ -75,3 +75,8 @@
 
 ## [2026-09-27] schema | Step-by-step guides in chat
 - User preference: always give manual steps as a hand-holding guide in the chat (numbered steps, exact commands, expected output, fixes). Added to `CLAUDE.md` §8 Style.
+
+## [2026-09-27] revise | job-scout Windows fix + confirmed boards
+- The user's first run on Windows: 1 test failed with `UnicodeEncodeError` (cp1252 can't encode `≥`/`—`/🆕). Reproduced here under a non-UTF-8 locale.
+- Fixed: every file read/write now uses UTF-8 (CSV as `utf-8-sig` for Excel); console output can no longer crash on special characters. Added a guard test (12 tests), which passes under both UTF-8 and non-UTF-8 locales.
+- `--check-boards` on the user's machine: 4 boards OK (greenhouse flatironhealth, turing, scaleai; ashby openevidence), 7 removed (404). Updated [[job-scout]] to v1.0.1.

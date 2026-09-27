@@ -3,7 +3,7 @@ title: job-scout
 type: resource
 resource_kind: app
 url: tools/job-scout/
-version: 1.0.0
+version: 1.0.1
 checked: 2026-09-27
 install_status: installed
 tags: [careers, job-search, my-tools, playbook]
@@ -64,7 +64,7 @@ build environment, because the network policy blocks job sites.
 | `python3 job_scout.py --no-cache` | Ignore the 12-hour cache |
 | `python3 job_scout.py --offline jobs.json` | Score a saved list without internet |
 | `python3 job_scout.py --check-boards` | Test company board tokens |
-| `python3 -m unittest discover -s tests` | 11 offline tests |
+| `python3 -m unittest discover -s tests` | 12 offline tests (Windows: `py -m unittest discover -s tests`) |
 
 Scoring rules (in `profile.json`):
 - Keywords: clinical ×6, AI/product ×5, strategy/ops ×3
@@ -76,10 +76,11 @@ Scoring rules (in `profile.json`):
 - −20 posted more than 30 days ago
 
 ## Pitfalls & caveats
+- **Windows:** use `py` instead of `python3`. v1.0.1 fixes a crash when writing the report on Windows (default cp1252 text encoding); all files are now UTF-8, and the CSV opens cleanly in Excel.
 - **Parsers are unverified against live APIs.** They were written from each API's
   documented format and tested on sample data. If a source shows 0 jobs or an error
   on your machine, send me the message.
-- **The starter company tokens are guesses.** Run `--check-boards`.
+- **Company boards:** 4 confirmed on your machine (2026-09-27): Greenhouse `flatironhealth`, `turing`, `scaleai`; Ashby `openevidence`. The 7 guesses that returned 404 were removed. Add more as you find them.
 - **Keyword scoring is blunt.** It can't judge seniority or how good a role is.
   Treat the score as a sorting aid, not a verdict.
 - **Scams:** never pay to apply, and check that the recruiter's email domain matches
