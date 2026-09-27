@@ -34,7 +34,7 @@ and reports about 54% less code at equal safety ([[2026-09-26-ponytail]]). See
 [[yagni]].
 
 ## Managing several agents
-The bottleneck moves from writing code to **process and review**. [[gstack]] gives every agent the same Think → Plan → Build → Review → Test → Ship → Reflect sprint, which its author says is what makes 10–15 parallel sessions workable ([[2026-09-27-gstack]]). Your plan: [[agent-management-plan]].
+The bottleneck moves from writing code to **process and review**. [[gstack]] gives every agent the same Think → Plan → Build → Review → Test → Ship → Reflect sprint, which its author says is what makes 10–15 parallel sessions workable ([[2026-09-27-gstack]]). Your plan: [[agent-management-plan]], carried out with your [[full-stack-dev]] skill.
 
 ## Connections
 - [[ai-product-development]]

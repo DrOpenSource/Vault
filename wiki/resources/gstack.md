@@ -5,7 +5,8 @@ resource_kind: repo
 url: https://github.com/garrytan/gstack
 version: v1.91.2.0
 checked: 2026-09-27
-install_status: trialling
+install_status: not-installed
+decision: condensed into full-stack-dev (2026-09-27)
 tags: [ai-coding, agents, claude-code, playbook]
 aliases: [Garry's Stack, gstack skills]
 created: 2026-09-27
@@ -15,6 +16,9 @@ status: active
 ---
 
 # gstack — playbook
+
+> [!note] User view
+> **2026-09-27:** Rather than install all of gstack, you had its method condensed into your own skill, [[full-stack-dev|Full-Stack Dev]], which you can install in any project. This page stays as the reference for the original.
 
 > Garry Tan's free skill pack that turns [[claude-code|Claude Code]] into a virtual
 > engineering team running one sprint process. [GitHub](https://github.com/garrytan/gstack)
@@ -130,6 +134,7 @@ For managing several agents at once, see [[agent-management-plan]].
   ([[2026-09-27-gstack]]).
 
 ## Connections
+- [[full-stack-dev]] — your condensed version of it
 - [[agent-management-plan]] — how gstack fits your agent operating plan
 - [[harness-cost-comparison]] — subscription vs your own harness
 - [[agent-harness]] — gstack is a layer on top of one

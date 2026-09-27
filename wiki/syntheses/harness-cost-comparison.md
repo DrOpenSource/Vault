@@ -15,6 +15,9 @@ status: active
 **Question:** What is a harness, and what would it cost to manage my agents with a
 separate harness instead of Claude Code?
 
+> [!note] User view
+> **2026-09-27:** Decided to skip a separate harness for now and stay on Claude Code, using your own [[full-stack-dev]] skill.
+
 ## Answer
 For your own building work, **stay on Claude Code with a subscription and add
 [[gstack]] on top**. It costs nothing beyond the plan, and Anthropic maintains the

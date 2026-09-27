@@ -18,6 +18,7 @@ An AI coding agent. It is in your toolkit for building and shipping products ([[
 Claude Code is an [[agent-harness]]: the loop, tools, permissions and context management around the model. The Claude Agent SDK is the same harness as a library ([[2026-09-27-claude-pricing]]). Staying on Claude Code rather than running your own harness is the recommendation in [[harness-cost-comparison]].
 
 ## Skills & plugins
+- [[full-stack-dev]] — **your own skill**, condensed from gstack: 9 stages, clinical safety gate, one installer; in `skills/full-stack-dev/`
 - [[gstack]] — Garry Tan's sprint skill pack (about 55 skills); tried 2026-09-27. Adds about 7K always-on tokens, and 3K–51K per skill used ([[2026-09-27-gstack]]).
 - [[ponytail]] — minimal-code ruleset; reviewed, and you decided not to use it. Install with `/plugin marketplace add DietrichGebert/ponytail`, then `/plugin install ponytail@ponytail` as a separate prompt ([[2026-09-26-ponytail]]).
 

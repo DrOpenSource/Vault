@@ -25,8 +25,10 @@ learns *(inference, built on [[2026-09-27-gstack]])*.
 ## The plan
 
 ### Phase 0: Set up (this week)
-1. Install gstack locally with prefixed commands (see [[gstack]] → Setup) and keep
-   telemetry off.
+1. Install your **[[full-stack-dev|Full-Stack Dev]]** skill (`skills/full-stack-dev/setup/install.sh --global`,
+   then `--project <repo> --with-settings` per app). It replaces installing all of
+   gstack. ~~Install gstack locally with prefixed commands~~ — superseded by your decision
+   of 2026-09-27.
 2. Add a standard block to each app's `CLAUDE.md`:
    - **What the app is**, its users, and its clinical guideline sources.
    - **Fixed clinical rules** (thresholds, alerts, dosing), each needing a test.
@@ -34,13 +36,14 @@ learns *(inference, built on [[2026-09-27-gstack]])*.
      before finishing.
    - **Out of scope:** "no new dependencies or features beyond the spec without
      asking."
-3. Create a **lane board** (below) and keep it on this page.
+3. The installer creates a **lane board** in each project (`docs/fsd/lanes.md`);
+   `/full-stack-dev status` prints it. Keep the cross-project summary below.
 
 ### Phase 1: One lane, full process (weeks 1–2)
 Pick **one app** (suggestion: [[saathi|Saathi]], since it's a web app and every
 gstack skill works on it). Run every change through:
-`/office-hours` or `/spec` → `/autoplan` → build → `/review` → `/qa` → `/ship`.
-Run `/retro` on Friday and paste it here to ingest it.
+`/full-stack-dev think` or `spec` → `plan` → `build` → `review` → `test` → `ship`.
+Run `/full-stack-dev retro` on Friday and paste its export block here to ingest it.
 **Measure:** changes shipped, bugs found after release, and how often you hit
 subscription limits.
 
@@ -65,8 +68,8 @@ subscription limits.
 | **No spec, no build.** Every lane starts from `/spec` or an approved plan | Agents drift without a target *(inference)* |
 | **Limit open lanes to what you can review** (start at 3) | Parallel output you can't review becomes risk *(inference)* |
 | **Two human gates:** plan and ship | You decide scope and release; agents do the rest ([[2026-09-27-gstack]]) |
-| **`/guard` on production or health-data work** | Blocks destructive commands and edits outside scope ([[2026-09-27-gstack]]) |
-| **`/clear` between stages** | gstack skills load 3K–51K tokens each; a fresh context keeps quality up ([[2026-09-27-gstack]]) |
+| **Ask-before rules on destructive commands** (`--with-settings`) | Skill rule 7 plus Claude Code permission rules; adapted from gstack's `/careful` ([[2026-09-27-gstack]]) |
+| **`/clear` between stages** | The `docs/fsd/` artifacts carry context forward; a fresh context keeps quality up *(inference)* |
 | **Right-size effort:** high for planning and review, lower for routine edits | Effort trades thoroughness against tokens and limits ([[2026-09-27-claude-pricing]]) |
 | **Friday `/retro` → vault** | Your agent workflow improves from evidence, not memory |
 
@@ -84,6 +87,9 @@ subscription limits.
   after the first two retros.
 - Browser-based QA doesn't cover native Android; your Android apps need your
   existing device or emulator testing ([[gstack]]).
+
+## Tooling
+- [[full-stack-dev]] — the skill that puts this plan into practice
 
 ## Sources
 - [[2026-09-27-gstack]]

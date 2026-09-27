@@ -52,3 +52,10 @@
 - Created resource [[gstack]] (trialling), concept [[agent-harness]], syntheses [[agent-management-plan]] and [[harness-cost-comparison]].
 - Updated: [[claude-code]], [[ai-assisted-development]], [[yagni]] (contradiction callout: YAGNI vs "Boil the Ocean"), [[ponytail]], [[overview]], index (+3 Wanted pages).
 - Discussion step skipped: the user gave a direct instruction. Open: subscription plan prices; the Phase 1 lane choice.
+
+## [2026-09-27] skill | Full-Stack Dev
+- User decisions: skip a separate harness for now; condense gstack into their own skill instead of installing all of it.
+- Built `skills/full-stack-dev/`: `SKILL.md` (router, 8 always-on rules, clinical safety gate, lane board), 9 stage files, 3 templates, `setup/install.sh` (global/project, idempotent, optional permission-rule merge), `settings.example.json`, `NOTICE.md` (gstack MIT).
+- Tested: project install on a scratch repo (re-run safe, settings merged with backup, valid JSON); global install; skill loaded in Claude Code and `status` ran.
+- Schema: added `skills/` layer, `resource_kind: skill`, the `skill` operation and log op. Created resource [[full-stack-dev]].
+- Updated: [[gstack]] (not installed; condensed), [[agent-management-plan]] (Phase 0/1 now use the skill; gstack install struck through), [[harness-cost-comparison]] (User view: skip harness), [[claude-code]], [[ai-assisted-development]], [[overview]], index.

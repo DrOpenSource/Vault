@@ -6,6 +6,7 @@ The full rules are in [`CLAUDE.md`](CLAUDE.md).
 - `raw/` — your source documents (never edited by the agent)
 - `wiki/` — the agent's pages. Start at [`wiki/index.md`](wiki/index.md) or [`wiki/overview.md`](wiki/overview.md)
 - `wiki/log.md` — timeline of every ingest, query, and lint
+- `skills/` — portable Claude Code skills you can install in other projects (e.g. `skills/full-stack-dev/setup/install.sh --global`)
 
 ## Daily use
 | You say | The agent does |

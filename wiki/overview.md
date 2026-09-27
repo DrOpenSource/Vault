@@ -33,9 +33,10 @@ curate sources and ask questions, and the LLM compiles them into linked pages
    ([[2026-09-26-resume]]).
 3. **Building with AI** — [[ai-assisted-development]], [[claude-code|Claude Code]],
    [[n8n]]: your production toolkit. Current focus: **managing agents as a team**,
-   meaning one sprint process per lane via [[gstack]] (trialling) and lanes limited by
-   your review time ([[agent-management-plan]]). Stay on the Claude Code
-   [[agent-harness|harness]] rather than building your own ([[harness-cost-comparison]]).
+   meaning one sprint process per lane via [[gstack]] (condensed into your skill) and lanes limited by
+   your review time ([[agent-management-plan]]), carried out with your own
+   [[full-stack-dev|Full-Stack Dev]] skill (condensed from [[gstack]]). Stay on the Claude Code
+   [[agent-harness|harness]] rather than building your own ([[harness-cost-comparison]]; decided 2026-09-27).
    [[ponytail|Ponytail]] was reviewed and not adopted.
 4. **[[personal-productivity|Productivity]]** — systems and habits, and the vault
    itself as a tool.
@@ -53,7 +54,7 @@ company or venture setting *(inference)*.
 ## Open threads
 - Fill in [[me]]: target role and timeline; impact metrics for shipped apps.
 - Define what "productive" means for you ([[personal-productivity]]).
-- Run Phase 1 of [[agent-management-plan]] and ingest the first `/retro`.
+- Install [[full-stack-dev]] locally, then run Phase 1 of [[agent-management-plan]] and ingest the first `/retro`.
 - Add current subscription plan prices to finish [[harness-cost-comparison]].
 - First real sources on AI product development.
 - When to add search ([[qmd]]): revisit at around 100 sources.

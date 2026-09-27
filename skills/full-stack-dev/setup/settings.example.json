@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "ask": [
+      "Bash(rm -rf *)",
+      "Bash(git push --force *)",
+      "Bash(git push -f *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -fd *)",
+      "Bash(git branch -D *)",
+      "Bash(docker system prune *)",
+      "Bash(kubectl delete *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(**/*.keystore)",
+      "Read(**/*.jks)",
+      "Edit(**/*.keystore)",
+      "Edit(**/*.jks)"
+    ]
+  }
+}
